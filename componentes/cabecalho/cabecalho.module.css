@@ -1,0 +1,136 @@
+.caixaCabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 45px;
+}
+
+.logo{
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.meio{
+    display: flex;
+    gap: 60px;
+    list-style-type: none;
+}
+
+.itemMeio{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.loginCadastro{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.login{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+
+}
+
+.botaoCadastro{
+    width: 100px;
+    height: 48px;
+
+    border-radius: 24px;
+    background: #F9C06A;
+    box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
+    color: #1E1E1E;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/*////FOOTER/////*/
+
+
+.caixaFooter{
+    display: flex;
+    gap: 66px;   
+    justify-content: space-evenly;
+    
+}
+
+.logoFooter{
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.textin{
+    max-width: 380px;
+
+    text-align: justify;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
+}
+
+
+.caixaGeral{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.caixaRedes{
+    display: flex;
+    width: 152px;
+    justify-content: space-between;
+}
+
+.redes{
+    background: transparent;
+}
+
+.caixaTitulo{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.titulo{
+    display: flex;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.caixaItem{
+    max-width: 332px;;
+    display: flex;
+    flex-direction: column;
+    gap: 22px; 
+
+}
+
+.item{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    margin: 0;
+    
+}
