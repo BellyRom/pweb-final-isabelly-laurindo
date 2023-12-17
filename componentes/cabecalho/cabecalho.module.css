@@ -11,7 +11,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    color: #3498db;
 }
+
 
 .meio{
     display: flex;
@@ -24,6 +26,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.itemMeio:hover {
+    text-decoration: underline; 
+    color: #F9C06A; 
 }
 
 .loginCadastro{

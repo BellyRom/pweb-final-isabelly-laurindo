@@ -63,7 +63,7 @@ export default function Footer() {
             <div className={styles.caixaTitulo}>
                 <Titulo titulo={'Contato'}/>
                 <Item
-                    txt1={'Rua Pedro Pierre de Barros, Conjunto Mutirão, Centro, Rio Largo-57100-00, Alagoas'}
+                    txt1={'Rua Pedro Pierre de Barros, Conjunto Mutirão, Centro, Rio Largo- 57100-00, Alagoas'}
                     txt2={'(82) 9 0110-0101'}
                     txt3={'ivrs2@luno.ifal.edu.br'}
                     txt4={'www.graodecafe.com'} >
