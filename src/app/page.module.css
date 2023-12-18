@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 93px;
+  padding-right: 93px;
 }
 
 .pagina1{
@@ -50,6 +51,66 @@
   height: 48px;
   border-radius: 24px;
   margin-top: 20px;
+  font-family: var();
+
+  color: #1E1E1E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: #F9C06A;
+  box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
+}
+
+/*///////////SEGUNDA PÁGINA/////////////*/
+
+.pagina2{
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  height: 648px;
+  width: max-content;
+}
+
+.caixaElementos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 29px;
+  max-width: 590px;
+}
+
+.caixaTextos2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 29px;
+  
+}
+
+.texto4{
+  color: var(--coffee, #603809);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.texto5{
+  color: #707070;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: justify;
+  margin: 0;
+}
+
+.botaoSaibaMais{
+  width: 134px;
+  height: 48px;
+  border-radius: 24px;
   font-family: var();
 
   color: #1E1E1E;

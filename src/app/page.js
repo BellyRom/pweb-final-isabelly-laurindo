@@ -29,6 +29,30 @@ function BotaoPecaAgora() {
   )
 }
 
+/*///////////SEGUNDA PÁGINA/////////////*/
+
+
+function Textos2() {
+  return(
+    <div className={styles.caixaTextos2}>
+      <p className={styles.texto4}>Descubra o melhor café</p>
+      <p className={styles.texto5}>Na Grão de Café, você encontrará mais do que uma simples cafeteria. 
+        Oferecemos café de alta qualidade que não apenas impulsiona sua produtividade, mas também eleva o seu ânimo. 
+        Desfrutar de uma xícara de café é agradável, mas experimentar uma xícara de café autêntico conosco é uma experiência superior. 
+        Não restam dúvidas de que você se encantará com esse café mais do que qualquer outro que já tenha degustado. 
+      </p>
+    </div>
+  )
+}
+
+function BotaoSaibaMais() {
+
+  const redirecionar = useRouter();
+
+  return(
+    <button onClick={() => redirecionar.push('/sobre-nos')} className={styles.botaoSaibaMais}>Saiba Mais</button>
+  )
+}
 
 export default function Home() {
   return (
@@ -36,6 +60,15 @@ export default function Home() {
       <div className={styles.pagina1}>
           <Textos/>
           <BotaoPecaAgora/>
+      </div>
+      <div className={styles.pagina2}>
+        <div className={styles.caixaElementos}>
+        <Textos2/>
+        <BotaoSaibaMais/>
+        </div>
+        <div className={styles.caixaFoto}>
+          <Image src={'/copoCafe.png'} width={680} height={476} alt='Copo feito de grãos de café'/>
+        </div>
       </div>
     </main>
   )
