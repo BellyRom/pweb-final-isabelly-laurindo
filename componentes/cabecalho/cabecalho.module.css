@@ -2,8 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 45px;
+    padding-left: 93px;
+    padding-right: 93px;
+    justify-content: space-between;
+
 }
 
 .logo{
@@ -66,11 +68,13 @@
 
 /*////FOOTER/////*/
 
-
 .caixaFooter{
     display: flex;
     gap: 66px;   
-    justify-content: space-evenly;
+    padding-right: 93px;
+    padding-left: 93px;
+    justify-content: space-between;
+    
 }
 
 .logoFooter{

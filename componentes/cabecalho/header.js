@@ -32,7 +32,7 @@ function Meio({children}){
 }
 
 function LoginCadastro() {
-
+   
     const redirecionar = useRouter();
 
     return(
