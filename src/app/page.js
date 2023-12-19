@@ -82,7 +82,7 @@ export default function Home() {
         <BotaoSaibaMais/>
         </div>
         <div className={styles.caixaFoto}>
-          <Image src={'/copoCafe.png'} width={680} height={476} alt='Copo feito de grãos de café'/>
+          <Image src={'/copoCafe.png'} width={600} height={476} alt='Copo feito de grãos de café'/>
         </div>
       </div>
       </div>
