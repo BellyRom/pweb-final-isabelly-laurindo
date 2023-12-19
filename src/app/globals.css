@@ -3,4 +3,17 @@
   background: #FFFEFC;
   text-decoration: none;
   color: initial;
+  color: #FFF;
+}
+
+body{
+  margin: 0;
+}
+
+a{
+  background: transparent;
+}
+
+li{
+  background: transparent; 
 }

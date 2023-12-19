@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 93px;
-  padding-right: 93px;
+  z-index: 999;
 }
 
 .pagina1{
@@ -11,6 +10,9 @@
   flex-direction: column;
   justify-content: center;
   height: 768px;
+  background: transparent;
+  padding-left: 93px;
+  padding-right: 93px;
 }
 
 .caixaTextos{
@@ -18,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   max-width: 527px;
+  background: transparent;
 }
 
 .texto1{
@@ -26,6 +29,7 @@
   font-weight: 500;
   line-height: normal;
   margin: 0;
+  background: transparent;
 }
 
 .texto2{
@@ -34,6 +38,7 @@
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  background: transparent;
 }
 
 .texto3{
@@ -44,6 +49,7 @@
   margin: 0;
   width: 527px;
   text-align: justify;
+  background: transparent;
 }
 
 .botaoPecaAgora{
@@ -51,7 +57,7 @@
   height: 48px;
   border-radius: 24px;
   margin-top: 20px;
-  font-family: var();
+  background: transparent;
 
   color: #1E1E1E;
   font-size: 16px;
@@ -70,6 +76,8 @@
   gap: 36px;
   height: 648px;
   width: max-content;
+  padding-left: 93px;
+  padding-right: 93px;
 }
 
 .caixaElementos{

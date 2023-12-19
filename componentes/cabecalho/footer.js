@@ -1,7 +1,7 @@
 import styles from './cabecalho.module.css'
 import Link from 'next/link';
-import { clicker_script } from '@/fonts';
 import Image from 'next/image';
+import { Clicker_Script } from 'next/font/google';
 
 
 function Logo() {
@@ -28,8 +28,23 @@ function Titulo({titulo}) {
 }
 
 export default function Footer() {
+
+    const fundo = {
+        width: '100%',
+        height: 'auto',
+        background: `linear-gradient(#442808 100%, lightgray)`,
+        backgroundBlendMode: `overlay`,
+      };
+
+      const foto ={
+        width: '100%',
+        height: '492px',
+        background: `url('/fotter_image.png') 50% / cover no-repeat`
+      }
+
     return(
-        <div className={styles.caixaFooter}>
+    <div style={fundo}>
+        <div className={styles.caixaFooter} style={foto}>
             <div className={styles.caixaGeral}>
                 <Logo/>
                 <p className={styles.textin}>"Bem-vindo à Cafeteira Grão de Café, onde o café se transforma em poesia líquida, 
@@ -70,5 +85,6 @@ export default function Footer() {
                 </Item>
             </div>
         </div>
+    </div>
     );
 }

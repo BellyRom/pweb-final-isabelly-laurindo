@@ -1,3 +1,10 @@
+.header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+}
+
 .caixaCabecalho{
     display: flex;
     justify-content: center;
@@ -6,6 +13,7 @@
     padding-right: 93px;
     justify-content: space-between;
     gap: 45px;
+    background: transparent;
 }
 
 .logo{
@@ -14,6 +22,7 @@
     font-weight: 400;
     line-height: normal;
     color: #3498db;
+    background: transparent;
 }
 
 
@@ -21,6 +30,8 @@
     display: flex;
     gap: 60px;
     list-style-type: none;
+    background: transparent;
+    padding: 0;
 }
 
 .itemMeio{
@@ -28,17 +39,20 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    background: transparent;
 }
 
 .itemMeio:hover {
     text-decoration: underline; 
     color: #F9C06A; 
+    background: transparent;
 }
 
 .loginCadastro{
     display: flex;
     gap: 35px;
     align-items: center;
+    background: transparent;
 }
 
 .login{
@@ -74,7 +88,7 @@
     padding-right: 93px;
     padding-left: 93px;
     justify-content: space-between;
-    
+    height: 258px;
 }
 
 .logoFooter{
@@ -82,10 +96,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    background: transparent;
 }
 
 .textin{
     max-width: 380px;
+    background: transparent;
 
     text-align: justify;
     font-size: 14px;
@@ -100,6 +116,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background: transparent;
 }
 
 
@@ -107,16 +124,19 @@
     display: flex;
     width: 152px;
     justify-content: space-between;
+    background: transparent;
 }
 
 .redes{
     background: transparent;
 }
 
+
 .caixaTitulo{
     display: flex;
     flex-direction: column;
     gap: 31px;
+    background: transparent;
 }
 
 .titulo{
@@ -126,6 +146,7 @@
     font-weight: 700;
     line-height: normal;
     margin: 0;
+    background: transparent;
 }
 
 .caixaItem{
@@ -133,6 +154,8 @@
     display: flex;
     flex-direction: column;
     gap: 22px; 
+    background: transparent;
+
 }
 
 .item{
@@ -141,4 +164,5 @@
     font-weight: 400;
     line-height: 42px;
     margin: 0;  
+    background: transparent;
 }

@@ -6,6 +6,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import { useRouter } from 'next/navigation'
 
+
 function Textos() {
   return(
     <div className={styles.caixaTextos}>
@@ -55,11 +56,25 @@ function BotaoSaibaMais() {
 }
 
 export default function Home() {
+
+  const fundo = {
+    background: `linear-gradient(90deg, #1E1E1E -6.88%, rgba(0, 0, 0, 0.00) 87.45%)`
+  }
+
+  const foto = {
+    width: '100%',
+    height: '768px',
+    background: `url('/coffee_image.png')  lightgray 50% / cover no-repeat`, 
+  };
+
   return (
     <main className={styles.main}>
-      <div className={styles.pagina1}>
+      <div className={styles.principal}>
+      <div style={fundo}>
+      <div className={styles.pagina1} style={foto}>
           <Textos/>
           <BotaoPecaAgora/>
+      </div>
       </div>
       <div className={styles.pagina2}>
         <div className={styles.caixaElementos}>
@@ -69,6 +84,7 @@ export default function Home() {
         <div className={styles.caixaFoto}>
           <Image src={'/copoCafe.png'} width={680} height={476} alt='Copo feito de grãos de café'/>
         </div>
+      </div>
       </div>
     </main>
   )

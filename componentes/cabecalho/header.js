@@ -46,6 +46,7 @@ function LoginCadastro() {
 
 export default function Header({children}) {
     return(
+        <div className={styles.header}>
         <div className={styles.caixaCabecalho}>
             <Logo/>
             <Meio>
@@ -56,6 +57,7 @@ export default function Header({children}) {
             </Meio>
             <LoginCadastro/>
         {children}
+        </div>
         </div>
     );
 }
