@@ -184,6 +184,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 26px;
 }
 
 .caixaTextoNews{
@@ -205,7 +206,6 @@
     line-height: normal;
     margin: 0;
     background: transparent;
-    
 }
 
 .subtituloNews{
@@ -215,4 +215,35 @@
     line-height: 34px;
     background: transparent;
     margin: 0;
+}
+
+.caixaFormulario{
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+}
+
+.email{
+    width: 642px;
+    height: 66px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    background: #FFF9F1;
+}
+
+.botaoFormulario{
+    width: 200px;
+    height: 66px;
+
+    color: var(--coffee, #603809);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    border-radius: 4px;
+    background: #F9C06A;
+    box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
 }

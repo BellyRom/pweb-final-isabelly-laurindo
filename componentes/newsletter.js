@@ -14,6 +14,18 @@ function TextoNews() {
     )
 }
 
+function Formulario() {
+    return(
+    <div className={styles.caixaFormulario}>
+    <form action="/enviar-email" method="post" className={styles.caixaFormulario}>
+        <input type="text" className={styles.email} name="email" placeholder="Escreva seu email" required/>
+
+        <button type="submit" className={styles.botaoFormulario}>Inscrever-se</button>
+    </form>
+    </div>
+    )
+}
+
 export default function NewsLetter() {
 
     const foto = {
@@ -33,6 +45,7 @@ export default function NewsLetter() {
         <div style={foto}>
             <div style={fundo} className={styles.fundoNews}>
                 <TextoNews />
+                <Formulario/>
             </div>
         </div>
     )
