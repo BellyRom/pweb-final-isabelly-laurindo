@@ -117,6 +117,10 @@
     flex-direction: column;
     gap: 20px;
     background: transparent;
+    justify-content: space-evenly;
+    padding-top: 15%;
+    padding-bottom: 4%;
+
 }
 
 
@@ -137,6 +141,9 @@
     flex-direction: column;
     gap: 31px;
     background: transparent;
+    justify-content: flex-end;
+    padding-bottom: 5% ;
+    position: relative;
 }
 
 .titulo{
@@ -147,6 +154,9 @@
     line-height: normal;
     margin: 0;
     background: transparent;
+    position: absolute;
+    top: 250px;
+
 }
 
 .caixaItem{
@@ -162,7 +172,8 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 42px;
+    line-height: normal;
     margin: 0;  
     background: transparent;
+    
 }

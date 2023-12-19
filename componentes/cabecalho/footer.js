@@ -38,7 +38,7 @@ export default function Footer() {
 
       const foto ={
         width: '100%',
-        height: '492px',
+        height: '600px',
         background: `url('/fotter_image.png') 50% / cover no-repeat`
       }
 
