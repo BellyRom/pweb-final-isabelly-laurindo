@@ -5,15 +5,18 @@ import './layout'
 import Image from 'next/image'
 import styles from './page.module.css'
 import { useRouter } from 'next/navigation'
-
+import '../paginasExtras.module.css'
+import Menu from './menu/page'
+import clsx from 'clsx';
+import { playfair_display } from '@/fonts';
 
 function Textos() {
   return(
     <div className={styles.caixaTextos}>
       <p className={styles.texto1}>Nós cobrimos sua manhã com um</p>
-      <p className={styles.texto2}>Cafézinho</p>
+      <p className={styles.texto2}>Cafézin</p>
       <p  className={styles.texto3}> 
-        Comece o seu dia da melhor maneira possível, 
+        Para iniciar o seu dia da melhor maneira possível, 
         saboreando uma xícara do mais refinado café e 
         explorando os incríveis e distintos sabores que oferecemos com muito carinho.
       </p>
@@ -26,7 +29,7 @@ function BotaoPecaAgora() {
   const redirecionar = useRouter();
 
   return(
-    <button onClick={() => redirecionar.push('/menu')} className={styles.botaoPecaAgora}>Peça Agora</button>
+    <button onClick={() => redirecionar.push('/menu')} className={clsx([styles.botaoPecaAgora, playfair_display.className])}>Peça Agora</button>
   )
 }
 
@@ -39,7 +42,6 @@ function Textos2() {
       <p className={styles.texto4}>Descubra o melhor café</p>
       <p className={styles.texto5}>Na Grão de Café, você encontrará mais do que uma simples cafeteria. 
         Oferecemos café de alta qualidade que não apenas impulsiona sua produtividade, mas também eleva o seu ânimo. 
-        Desfrutar de uma xícara de café é agradável, mas experimentar uma xícara de café autêntico conosco é uma experiência superior. 
         Não restam dúvidas de que você se encantará com esse café mais do que qualquer outro que já tenha degustado. 
       </p>
     </div>
@@ -51,9 +53,12 @@ function BotaoSaibaMais() {
   const redirecionar = useRouter();
 
   return(
-    <button onClick={() => redirecionar.push('/sobre-nos')} className={styles.botaoSaibaMais}>Saiba Mais</button>
+    <button onClick={() => redirecionar.push('/sobre-nos')} className={clsx([styles.botaoSaibaMais, playfair_display.className])}>Saiba Mais</button>
   )
 }
+
+
+/*////////////TERCEIRA PÁGINA//////////////////*/
 
 export default function Home() {
 
@@ -70,8 +75,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.principal}>
-      <div style={fundo}>
-      <div className={styles.pagina1} style={foto}>
+      <div style={foto}>
+      <div className={styles.pagina1} style={fundo}>
           <Textos/>
           <BotaoPecaAgora/>
       </div>
@@ -82,9 +87,10 @@ export default function Home() {
         <BotaoSaibaMais/>
         </div>
         <div className={styles.caixaFoto}>
-          <Image src={'/copoCafe.png'} width={600} height={476} alt='Copo feito de grãos de café'/>
+          <Image src={'/copoCafe.png'} width={600} height={476} className={styles.caixaFoto} alt='Copo feito de grãos de café'/>
         </div>
       </div>
+      <Menu/>
       </div>
     </main>
   )

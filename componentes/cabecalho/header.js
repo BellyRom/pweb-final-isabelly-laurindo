@@ -4,13 +4,14 @@ import React from 'react';
 import styles from './cabecalho.module.css'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { clicker_script } from '@/fonts';
+import clsx from 'clsx';
+import { clicker_script, playfair_display } from '@/fonts';
 
 
 function Logo() {
     
     return(
-        <Link href='/' className={styles.logoHeader}>Grão de Café</Link>
+        <Link href='/' className={clsx([styles.logo, clicker_script.className])}>Grão de Café</Link>
     );   
 }
 
@@ -38,7 +39,7 @@ function LoginCadastro() {
     return(
         <div className={styles.loginCadastro}>
             <Link href='/' className={styles.login}>Login</Link>
-            <button onClick={() => redirecionar.push('/')} className={styles.botaoCadastro}>Cadastrar</button>
+            <button onClick={() => redirecionar.push('/')} className={clsx([styles.botaoCadastro, playfair_display.className])}>Cadastrar</button>
         </div>
     );
 }

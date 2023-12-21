@@ -64,6 +64,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  border: 0;
   background: #F9C06A;
   box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
 }
@@ -73,11 +74,10 @@
 .pagina2{
   display: flex;
   align-items: center;
-  gap: 96px;
-  height: 648px;
+  gap: 96px;;
   width: max-content;
-  padding-left: 93px;
-  padding-right: 93px;
+  height: auto;
+  padding: 82px 93px 0 93px;
 }
 
 .caixaElementos{
@@ -127,5 +127,7 @@
   font-weight: 700;
   line-height: normal;
   background: #F9C06A;
+  border: 0;
   box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
 }
+

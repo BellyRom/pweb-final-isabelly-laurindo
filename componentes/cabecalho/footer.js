@@ -1,12 +1,13 @@
 import styles from './cabecalho.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import { Clicker_Script } from 'next/font/google';
+import {clsx} from 'clsx'
+import { clicker_script } from '@/fonts';
 
 
 function Logo() {
     return(
-        <Link href='/' className={styles.logoFooter}>Grão de Café</Link>
+        <Link href='/' className={clsx([styles.logoFooter, clicker_script.className])}>Grão de Café</Link>
     );   
 }
 
