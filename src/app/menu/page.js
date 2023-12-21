@@ -28,7 +28,7 @@ function Card({foto, nome}) {
   return(
     <div className={styles.cardGeral}>
       <div >
-      <Image src={`/${foto}.png`} width= {280} height= {222} className={styles.fotoCard}/>
+      <Image src={`/${foto}.png`} width= {280} height= {222}/>
       </div>
       <div className={styles.textsCard}>
         <p className={styles.nomeCard}>{nome}</p>
@@ -45,9 +45,9 @@ function Card({foto, nome}) {
 export default function Menu() {
   return (
     <main className={styles.main}>
-      <div className={styles.pagina3}>
+      <div className={styles.paginaMenu}>
         <TituloeSub/>
-        <div className={styles.cardVertical}>
+        <div className={styles.cardHorizontal}>
           <Card foto={'cafe1'} nome = 'Cappuccino'/>
           <Card foto={'cafe2'} nome = 'Chai Latte'/>
           <Card foto={'cafe3'} nome = 'Macchiato'/>

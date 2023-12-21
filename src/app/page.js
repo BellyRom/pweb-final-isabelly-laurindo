@@ -7,6 +7,7 @@ import styles from './page.module.css'
 import { useRouter } from 'next/navigation'
 import '../paginasExtras.module.css'
 import Menu from './menu/page'
+import SobreNos from './sobre-nos/page';
 import clsx from 'clsx';
 import { clicker_script, playfair_display } from '@/fonts';
 
@@ -91,6 +92,7 @@ export default function Home() {
         </div>
       </div>
       <Menu/>
+      <SobreNos/>
       </div>
     </main>
   )

@@ -1,5 +1,5 @@
-/*////////////PAGINA 3//////////////////*/
-.pagina3{
+/*////////////PAGINA MENU//////////////////*/
+.paginaMenu{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,12 +46,6 @@
     position: relative;
 }
 
-.fotoCard{
-    width: 280px;
-    height: 222px;
-    align-items: baseline;
-}
-
 .textsCard{
     display: flex;
     flex-direction: column;
@@ -95,7 +89,7 @@
     background: transparent;
 }
 
-.cardVertical{
+.cardHorizontal{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,3 +119,111 @@
     background: #F9C06A;
     box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
   }
+
+  /*//////////////PAGINA SOBRE NÓS////////////////*/
+
+  .paginaSobreNos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 82px 93px 82px 93px;
+}
+
+.caixaCard{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 280px;
+    height: 284px;
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    background: #FFF9F1;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixaCard:hover{
+    background: #FFEED8;;
+}
+
+.fotoCard{
+    background: transparent;
+}
+
+.textCard{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    width: 220px;
+    height: auto;
+}
+
+.tituloCard{
+    color: var(--coffee, #603809);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;  
+    margin: 0;
+    background: transparent;
+}
+
+.subtituloCard{
+    color: #707070;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    background: transparent;
+}
+
+.caixaFim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding-top: 32px;
+}
+
+.text1{
+    color: #707070;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.text2{
+    color: var(--coffee, #603809);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.botaoSeJunte{
+    width: 134px;
+    height: 48px;
+    border-radius: 24px;
+    margin-top: 20px;
+    background: transparent;
+    margin: 0;
+  
+    color: #1E1E1E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 0;
+    background: #F9C06A;
+    box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
+}
