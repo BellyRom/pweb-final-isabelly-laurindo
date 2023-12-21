@@ -8,13 +8,13 @@ import { useRouter } from 'next/navigation'
 import '../paginasExtras.module.css'
 import Menu from './menu/page'
 import clsx from 'clsx';
-import { playfair_display } from '@/fonts';
+import { clicker_script, playfair_display } from '@/fonts';
 
 function Textos() {
   return(
     <div className={styles.caixaTextos}>
       <p className={styles.texto1}>Nós cobrimos sua manhã com um</p>
-      <p className={styles.texto2}>Cafézin</p>
+      <p className={clsx([styles.texto2, clicker_script.className])}>Cafézin</p>
       <p  className={styles.texto3}> 
         Para iniciar o seu dia da melhor maneira possível, 
         saboreando uma xícara do mais refinado café e 
